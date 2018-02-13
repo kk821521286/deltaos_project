@@ -1,0 +1,23 @@
+kernelTimeSlice(1)
+usrAhciName "/ata0a"
+cd "/ahci00:1/qt-4.8.5-rtp-egl/drv/"
+ld<test-gpu-rv7xx
+sysClkRateSet(588)
+taskDelay 5
+test_gpu 1,0,0
+taskDelay 60000
+
+
+putenv "QT_DIR=/ata0a/qt-4.8.5-rtp-egl/temp"
+putenv "LD_LIBRARY_PATH=/ata0a/qt-4.8.5-rtp-egl/lib"
+putenv "QT_PLUGIN_PATH=/ata0a/qt-4.8.5-rtp-egl/plugins"
+putenv "QT_QWS_FONTDIR=/ata0a/qt-4.8.5-rtp-egl/lib/fonts"
+putenv "QT_DEBUG_PLUGINS=1"
+putenv "QWS_KEYBOARD=qkeyboard:usb=/uglUsbKbd/0"
+putenv "QWS_MOUSE_PROTO=qmouse:usb=/uglUsbPtr/0"
+putenv "SHINE_SOFTWARECURSOR=0"
+putenv "QWS_DISPLAY=topmoo:shine2:device=/shine/graphics/rv770/0"
+putenv "SHINE_EGL_DISPLAY=!/ata0a/qt-4.8.5-rtp-egl/lib/libshine-egl.so.1:device=/shine/graphics/rv770/0&dri=/ata0a/qt-4.8.5-rtp-egl/lib/librv7xxgl-dri.so.1&screenid=0"
+cd "/ata0a/qt-4.8.5-rtp-egl/demos"
+rtpSp "MCRClientAppUI -qws",200,0x400000
+

@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/button 1.png</file>
+        <file>image/button 2.png</file>
+        <file>image/button 3.png</file>
+        <file>image/config.png</file>
+        <file>image/goleft.png</file>
+        <file>image/goright.png</file>
+        <file>image/playing&amp;norecording.png</file>
+        <file>image/playing&amp;recording.png</file>
+        <file>image/Polygon.png</file>
+        <file>image/Rectangle 103.png</file>
+        <file>image/Rectangle 111.png</file>
+        <file>image/sidebar button 1.png</file>
+        <file>image/sidebar button 2.png</file>
+        <file>image/sidebar button 3.png</file>
+        <file>image/sidebar title.png</file>
+        <file>image/stop&amp;norecording.png</file>
+        <file>image/stop&amp;recording.png</file>
+        <file>image/video button 1.png</file>
+        <file>image/video button 2.png</file>
+        <file>image/video button 3.png</file>
+        <file>MCRClientAppUI.rc</file>
+        <file>MCRClientAppUI.ico</file>
+        <file>picture/005.png</file>
+        <file>qss/default.qss</file>
+        <file>image/loading.png</file>
+    </qresource>
+</RCC>
